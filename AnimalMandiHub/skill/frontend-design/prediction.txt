@@ -1,0 +1,11 @@
+I think this skill will output distinctive, production-grade frontend code with bold aesthetic choices that avoid generic AI aesthetics. Specifically, it will generate:
+
+1. HTML/CSS/JS or React/Vue code for web components, pages, or applications
+2. Creative typography using distinctive font pairings (not generic fonts like Inter or Roboto)
+3. Cohesive color schemes with CSS variables and intentional accent colors
+4. Thoughtful animations and micro-interactions using CSS or Motion library
+5. Unconventional layouts with asymmetry, overlap, or diagonal flow
+6. Rich visual details like gradient meshes, noise textures, or geometric patterns
+7. Code that is both functional and visually memorable
+
+The output will be intentionally designed with a clear aesthetic direction (e.g., brutalist, maximalist, retro-futuristic, luxury/refined) rather than defaulting to safe, generic designs. The skill prioritizes creativity and memorability over conventional UI patterns.

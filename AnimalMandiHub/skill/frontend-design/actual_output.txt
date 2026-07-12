@@ -1,0 +1,234 @@
+FRONTEND-DESIGN ACTUAL OUTPUT EXAMPLE
+
+Based on the skill's documentation, here's a representative output for a "Modern Dashboard Component" with a "luxury/refined" aesthetic:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #4a4a8a;
+            --accent: #e94560;
+            --light: #f8f9fa;
+            --gold: #d4af37;
+            --transition: all 0.4s cubic-bezier(0.17, 0.67, 0.88, 1.01);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background: linear-gradient(135deg, #0d0d2b, #1a1a2e);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            background: linear-gradient(45deg, var(--gold), #f5c542);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-card {
+            background: rgba(30, 30, 50, 0.6);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.8rem;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--accent));
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px rgba(25, 25, 45, 0.4);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .stat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+            color: var(--light);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.7;
+            font-weight: 400;
+        }
+
+        .chart-container {
+            background: rgba(30, 30, 50, 0.6);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            margin-bottom: 2.5rem;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .chart-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .chart {
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .bar {
+            flex: 1;
+            background: linear-gradient(to top, var(--accent), #ff6b81);
+            border-radius: 4px 4px 0 0;
+            transition: var(--transition);
+        }
+
+        .bar:hover {
+            transform: scaleY(1.2);
+            background: linear-gradient(to top, var(--gold), #e9c46a);
+        }
+
+        .bar:nth-child(2) { background: linear-gradient(to top, #4a90e2, #63b3ed); }
+        .bar:nth-child(3) { background: linear-gradient(to top, #50e3c2, #7bdcb5); }
+        .bar:nth-child(4) { background: linear-gradient(to top, #f5a623, #f8c26a); }
+        .bar:nth-child(5) { background: linear-gradient(to top, #d0021b, #f56a6a); }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chart {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <div class="logo">AURELIA</div>
+            <nav>
+                <ul style="display: flex; gap: 2rem;">
+                    <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Dashboard</a></li>
+                    <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Analytics</a></li>
+                    <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Revenue</div>
+                <div class="stat-value">$24,892</div>
+                <div style="font-size: 0.8rem; opacity: 0.6;">+12.4% from last month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Users</div>
+                <div class="stat-value">1,842</div>
+                <div style="font-size: 0.8rem; opacity: 0.6;">+8.2% from last month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Conversion</div>
+                <div class="stat-value">4.7%</div>
+                <div style="font-size: 0.8rem; opacity: 0.6;">+2.1% from last month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Retention</div>
+                <div class="stat-value">78.3%</div>
+                <div style="font-size: 0.8rem; opacity: 0.6;">+3.5% from last month</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-header">
+                <div class="chart-title">Monthly Performance</div>
+                <div style="font-size: 0.85rem; opacity: 0.7;">Last 6 months</div>
+            </div>
+            <div class="chart">
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 85%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 72%;"></div>
+                <div class="bar" style="height: 90%;"></div>
+                <div class="bar" style="height: 55%;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+This output demonstrates:
+- Distinctive typography (Cormorant Garamond + IBM Plex Mono)
+- Luxury/refined aesthetic with gold accents and deep navy background
+- CSS variables for consistent theming
+- Subtle animations and hover effects
+- Asymmetrical layout with generous negative space
+- Gradient borders and backdrop filters
+- No generic fonts or clichéd purple gradients

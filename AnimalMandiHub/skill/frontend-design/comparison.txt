@@ -1,0 +1,27 @@
+FRONTEND-DESIGN SKILL: EXPECTATIONS VS REALITY
+
+Expectation (from prediction):
+- Would output distinctive, production-grade frontend code with bold aesthetic choices
+- Generate creative typography using distinctive font pairings (not generic fonts like Inter or Roboto)
+- Create cohesive color schemes with CSS variables and intentional accent colors
+- Implement thoughtful animations and micro-interactions
+- Produce unconventional layouts with asymmetry, overlap, or diagonal flow
+- Include rich visual details like gradient meshes, noise textures, or geometric patterns
+- Prioritize creativity and memorability over conventional UI patterns
+
+Reality (from SKILL.md documentation):
+- The skill is designed to produce exactly these outputs, but requires specific frontend requirements from the user
+- Emphasizes "BOLD aesthetic direction" with clear examples (brutally minimal, maximalist chaos, retro-futuristic, etc.)
+- Provides detailed guidelines for typography, color, motion, spatial composition, and visual details
+- Explicitly forbids generic AI aesthetics (Inter, Roboto, purple gradients on white backgrounds)
+- Requires user input about purpose, audience, constraints, and differentiation
+- Focuses on intentionality and precision in execution rather than just intensity
+
+Key Differences:
+1. Our prediction assumed the skill might auto-generate without specific inputs, but reality shows it requires user-provided requirements
+2. The documentation is more prescriptive about aesthetic directions (listing specific styles to choose from)
+3. The skill emphasizes "committing to a BOLD aesthetic direction" as a critical step before coding
+4. The reality includes more specific technical guidance (CSS variables, animation-delay, scroll-triggering, etc.)
+
+Conclusion:
+Our prediction was largely accurate about the type of output, but underestimated the structured process required (design thinking phase) and the necessity of user input to guide the aesthetic direction.
